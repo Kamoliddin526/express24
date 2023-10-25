@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@mixin Default {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none !important;
+  font-family: Inter;
+}
+
+@mixin Flex {
+  display: flex;
+}
+
+@mixin DisplayFlex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin MenuDisplay {
+  width: 80%;
+  margin: 35px auto;
+  height: auto;
+}
+
+@mixin Menu {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  height: 30%;
+  gap: 10px;
+  h1 {
+    position: absolute;
+    top: -30%;
+    left: 4.6%;
+    font-weight: 800;
+  }
+  .menu__card {
+    height: 200px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  }
+}
